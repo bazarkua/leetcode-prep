@@ -381,7 +381,7 @@ function renderTopics() {
     const { solved, total } = topicStats(t);
     const topicDir = `solutions/${pad(ti + 1)}-${t.slug}`;
     html += `<section class="topic" id="topic-${t.slug}">
-      <h2><a href="${topicDir}/" style="color:inherit;text-decoration:none">${escapeHtml(t.title)}</a> <span class="count">${solved} / ${total} solved</span></h2>
+      <h2><a href="${topicDir}/index.html" style="color:inherit;text-decoration:none">${escapeHtml(t.title)}</a> <span class="count">${solved} / ${total} solved</span></h2>
       <table>
         <thead><tr>
           <th></th><th>#</th><th>Problem</th><th>Difficulty</th><th>Notes</th>
