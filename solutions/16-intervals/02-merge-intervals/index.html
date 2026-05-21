@@ -99,7 +99,9 @@ When solved, this page holds:
 </script>
 <script>
   const src = document.getElementById('md-source').textContent;
-  document.getElementById('content').innerHTML = marked.parse(src);
+  document.getElementById("content").innerHTML = marked.parse(src);
+  document.querySelectorAll("main a[href$=\".md\"]").forEach(a => a.setAttribute("href", a.getAttribute("href").replace(/README\.md$/, "index.html")));
+  document.querySelectorAll("main a[href$=\"/\"]").forEach(a => a.setAttribute("href", a.getAttribute("href") + "index.html"));
 </script>
 </body>
 </html>
