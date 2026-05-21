@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>131. Palindrome Partitioning — LeetCode Prep</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --panel: #161922;
+    --text: #e8eaf2;
+    --muted: #8a8fa3;
+    --accent: #88a8ff;
+    --border: rgba(255,255,255,0.08);
+    --code-bg: #1a1d28;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    line-height: 1.65;
+  }
+  .nav { padding: 16px 32px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .nav a { color: var(--muted); text-decoration: none; }
+  .nav a:hover { color: var(--accent); }
+  main { max-width: 800px; margin: 0 auto; padding: 32px 32px 80px; }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+  h3 { font-size: 16px; font-weight: 600; margin: 24px 0 8px; }
+  p { margin: 12px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  code { background: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-family: "SF Mono", Menlo, monospace; font-size: 0.9em; }
+  pre { background: var(--code-bg); padding: 16px; border-radius: 8px; overflow-x: auto; border: 1px solid var(--border); }
+  pre code { background: transparent; padding: 0; font-size: 13px; line-height: 1.5; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
+  th { color: var(--muted); font-weight: 500; }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  blockquote { border-left: 3px solid var(--muted); margin: 16px 0; padding: 4px 16px; color: var(--muted); }
+  ul, ol { padding-left: 24px; }
+  li { margin: 4px 0; }
+  strong { color: #ffffff; }
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="../../../index.html">← Roadmap</a>
+  &nbsp;·&nbsp;
+  <a href="../index.html">Backtracking</a>
+</div>
+<main id="content"></main>
+<script src="../../../assets/marked.min.js"></script>
+<script id="md-source" type="text/markdown">
+# 131. Palindrome Partitioning
+
+| | |
+|---|---|
+| **Topic** | [Backtracking](../README.md) |
+| **Difficulty** | Medium |
+| **LeetCode** | [leetcode.com/problems/palindrome-partitioning](https://leetcode.com/problems/palindrome-partitioning/) |
+
+---
+
+> Notes coming soon.
+
+When solved, this page holds:
+- Problem restated in plain English
+- Brute-force approach with time/space analysis
+- Optimized approach and key insight
+- Clean Python solution
+- Edge cases
+- How to explain it out loud in an interview
+
+[← Back to Backtracking](../README.md)
+
+</script>
+<script>
+  const src = document.getElementById('md-source').textContent;
+  document.getElementById('content').innerHTML = marked.parse(src);
+  document.querySelectorAll('main a[href$=".md"]').forEach(a => a.setAttribute('href', a.getAttribute('href').replace(/README\.md$/, 'index.html')));
+  document.querySelectorAll('main a[href$="/"]').forEach(a => a.setAttribute('href', a.getAttribute('href') + 'index.html'));
+</script>
+</body>
+</html>

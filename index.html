@@ -372,14 +372,15 @@ function renderTree() {
   svg.innerHTML = html;
 }
 
-function pad(n) { return String(n).padStart(2, "0"); }
+function pad2(n) { return String(n).padStart(2, "0"); }
+function pad4(n) { return String(n).padStart(4, "0"); }
 
 function renderTopics() {
   const main = document.getElementById("topics");
   let html = "";
   TOPICS.forEach((t, ti) => {
     const { solved, total } = topicStats(t);
-    const topicDir = `solutions/${pad(ti + 1)}-${t.slug}`;
+    const topicDir = `problems/${pad2(ti + 1)}-${t.slug}`;
     html += `<section class="topic" id="topic-${t.slug}">
       <h2><a href="${topicDir}/index.html" style="color:inherit;text-decoration:none">${escapeHtml(t.title)}</a> <span class="count">${solved} / ${total} solved</span></h2>
       <table>
@@ -387,12 +388,12 @@ function renderTopics() {
           <th></th><th>#</th><th>Problem</th><th>Difficulty</th><th>Notes</th>
         </tr></thead>
         <tbody>`;
-    t.problems.forEach(([num, title, diff, slug, isSolved], pi) => {
+    t.problems.forEach(([num, title, diff, slug, isSolved]) => {
       const diffClass = `diff-${diff.toLowerCase()}`;
       const status = isSolved
         ? `<span class="check">✓</span>`
         : `<span class="uncheck">☐</span>`;
-      const notesPath = `${topicDir}/${pad(pi + 1)}-${slug}/index.html`;
+      const notesPath = `${topicDir}/${pad4(num)}-${slug}/index.html`;
       html += `<tr class="${isSolved ? "solved" : ""}">
         <td class="status">${status}</td>
         <td class="num">${num}</td>

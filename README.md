@@ -7,36 +7,37 @@ My structured run through the [NeetCode 150](https://neetcode.io/practice) on th
 ## What's here
 
 - **`index.html`** — single-file roadmap. Open it in any browser. You get the full NeetCode tree (Arrays & Hashing → ... → Math & Geometry), with a progress bar under every topic node and clickable jumps to the problem tables below.
-- **`solutions/`** — 18 topic folders, 150 problem folders. Each problem has its own `README.md` (notes) and `index.html` (renders the notes locally).
+- **`problems/`** — 18 topic folders, 150 problem folders. Each problem has its own `README.md` (notes) and `index.html` (renders the notes locally).
 - **`assets/`** — vendored [marked.js](https://github.com/markedjs/marked) for client-side Markdown rendering.
 
 ## Folder layout
 
 ```
 .
-├── index.html                        # the roadmap
+├── index.html                          # the roadmap
 ├── README.md
 ├── assets/
 │   └── marked.min.js
-└── solutions/
-    ├── README.md                     # topic index
+└── problems/
+    ├── README.md                       # topic index
     ├── 01-arrays-hashing/
-    │   ├── README.md                 # problems in this topic
-    │   ├── 01-contains-duplicate/
-    │   │   ├── README.md             # the walkthrough
-    │   │   └── index.html            # local renderer
-    │   ├── 02-valid-anagram/
-    │   │   ├── README.md
-    │   │   └── index.html
+    │   ├── README.md                   # problems in this topic
+    │   ├── 0001-two-sum/
+    │   │   ├── README.md               # the walkthrough
+    │   │   └── index.html              # local renderer
+    │   ├── 0036-valid-sudoku/
+    │   ├── 0049-group-anagrams/
+    │   ├── 0128-longest-consecutive-sequence/
+    │   ├── 0217-contains-duplicate/
     │   └── ...
     ├── 02-two-pointers/
     │   ├── README.md
-    │   ├── 01-valid-palindrome/
+    │   ├── 0011-container-with-most-water/
     │   └── ...
     └── ...
 ```
 
-Folders are zero-padded so directory listings sort in the recommended NeetCode order.
+Topic folders use a sequential `NN-` prefix to follow the recommended NeetCode order. Problem folders use the **actual LeetCode problem number** (zero-padded to 4 digits) so it's instantly clear which problem each directory points to. The recommended study order is preserved in each topic's `README.md` table.
 
 ## How to use it
 
