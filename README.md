@@ -1,30 +1,28 @@
 # LeetCode Prep — NeetCode 150
 
-My structured run through the [NeetCode 150](https://neetcode.io/practice) on the way to crushing technical interviews. Bilingual walkthroughs (English + Russian), one folder per problem, progress tracked in a live HTML roadmap.
+My structured run through the [NeetCode 150](https://neetcode.io/practice) on the way to crushing technical interviews. Bilingual walkthroughs (English + Russian), one folder per problem, progress tracked in a single Markdown file.
 
 ![NeetCode 150 roadmap](https://img.shields.io/badge/Problems-150-4F4ED8) ![Languages](https://img.shields.io/badge/Languages-Python%20%7C%20EN%20%7C%20RU-38b676)
 
 ## What's here
 
-- **`index.html`** — single-file roadmap. Open it in any browser. You get the full NeetCode tree (Arrays & Hashing → ... → Math & Geometry), with a progress bar under every topic node and clickable jumps to the problem tables below.
-- **`problems/`** — 18 topic folders, 150 problem folders. Each problem has its own `README.md` (notes) and `index.html` (renders the notes locally).
-- **`assets/`** — vendored [marked.js](https://github.com/markedjs/marked) for client-side Markdown rendering.
+- **`PROGRESS.md`** — the tracker and roadmap. All 150 problems grouped by the 18 NeetCode topics as clickable task checkboxes. Tick a box in Obsidian and it saves straight to the file. Each line links to the problem on LeetCode and to its local notes.
+- **`problems/`** — 18 topic folders, 150 problem folders. Each problem has its own `README.md` holding the walkthrough notes.
+- **`sync.js`** — recomputes the `(x / y)` topic counts and the total in `PROGRESS.md` from its own checkboxes. Run `node sync.js` after ticking boxes.
 
 ## Folder layout
 
 ```
 .
-├── index.html                          # the roadmap
+├── PROGRESS.md                         # the tracker (source of truth)
+├── sync.js                             # refresh PROGRESS.md counts
 ├── README.md
-├── assets/
-│   └── marked.min.js
 └── problems/
     ├── README.md                       # topic index
     ├── 01-arrays-hashing/
     │   ├── README.md                   # problems in this topic
     │   ├── 0001-two-sum/
-    │   │   ├── README.md               # the walkthrough
-    │   │   └── index.html              # local renderer
+    │   │   └── README.md               # the walkthrough
     │   ├── 0036-valid-sudoku/
     │   ├── 0049-group-anagrams/
     │   ├── 0128-longest-consecutive-sequence/
@@ -41,10 +39,11 @@ Topic folders use a sequential `NN-` prefix to follow the recommended NeetCode o
 
 ## How to use it
 
-1. Open `index.html` in your browser.
-2. Pick the next unsolved problem from the topic table.
+1. Open `PROGRESS.md` in Obsidian.
+2. Pick the next unsolved problem from a topic.
 3. Click the LeetCode link to solve it.
-4. Click the 📝 link to read the walkthrough (rendered Markdown).
+4. Click the `notes` link to read the walkthrough.
+5. Tick the checkbox when solved, then run `node sync.js` to refresh the counts.
 
 ## What each walkthrough contains
 
