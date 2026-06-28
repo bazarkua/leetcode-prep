@@ -2,16 +2,16 @@
 
 Click a checkbox to mark a problem solved. Obsidian saves it back to this file.
 
-**Progress:** 5 / 150 solved
+**Progress:** 6 / 150 solved · [Time log](TIME_LOG.md)
 
-## Arrays & Hashing (5 / 9)
+## Arrays & Hashing (6 / 9)
 
 - [x] **217** [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) · Easy · [notes](problems/01-arrays-hashing/0217-contains-duplicate/README.md)
 - [x] **242** [Valid Anagram](https://leetcode.com/problems/valid-anagram/) · Easy · [notes](problems/01-arrays-hashing/0242-valid-anagram/README.md)
 - [x] **1** [Two Sum](https://leetcode.com/problems/two-sum/) · Easy · [notes](problems/01-arrays-hashing/0001-two-sum/README.md)
 - [x] **49** [Group Anagrams](https://leetcode.com/problems/group-anagrams/) · Medium · [notes](problems/01-arrays-hashing/0049-group-anagrams/README.md)
 - [x] **347** [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) · Medium · [notes](problems/01-arrays-hashing/0347-top-k-frequent-elements/README.md)
-- [ ] **238** [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) · Medium · [notes](problems/01-arrays-hashing/0238-product-of-array-except-self/README.md)
+- [x] **238** [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) · Medium · [notes](problems/01-arrays-hashing/0238-product-of-array-except-self/README.md)
 - [ ] **36** [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) · Medium · [notes](problems/01-arrays-hashing/0036-valid-sudoku/README.md)
 - [ ] **271** [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) · Medium · [notes](problems/01-arrays-hashing/0271-encode-and-decode-strings/README.md)
 - [ ] **128** [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) · Medium · [notes](problems/01-arrays-hashing/0128-longest-consecutive-sequence/README.md)

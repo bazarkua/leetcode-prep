@@ -7,22 +7,23 @@ My structured run through the [NeetCode 150](https://neetcode.io/practice) on th
 ## What's here
 
 - **`PROGRESS.md`** — the tracker and roadmap. All 150 problems grouped by the 18 NeetCode topics as clickable task checkboxes. Tick a box in Obsidian and it saves straight to the file. Each line links to the problem on LeetCode and to its local notes.
-- **`problems/`** — 18 topic folders, 150 problem folders. Each problem has its own `README.md` holding the walkthrough notes.
-- **`sync.js`** — recomputes the `(x / y)` topic counts and the total in `PROGRESS.md` from its own checkboxes. Run `node sync.js` after ticking boxes.
+- **`problems/`** — 18 topic folders, 150 problem folders. Each problem has a `README.md` (full bilingual walkthrough with code) and a `TIPS.md` (no-code step-by-step approach, complexity analysis, and a personal Q&A learning log).
+- **`TIME_LOG.md`** — study-session log: date, minutes spent, problems solved.
 
 ## Folder layout
 
 ```
 .
 ├── PROGRESS.md                         # the tracker (source of truth)
-├── sync.js                             # refresh PROGRESS.md counts
+├── TIME_LOG.md                         # study-session time log
 ├── README.md
 └── problems/
     ├── README.md                       # topic index
     ├── 01-arrays-hashing/
     │   ├── README.md                   # problems in this topic
     │   ├── 0001-two-sum/
-    │   │   └── README.md               # the walkthrough
+    │   │   ├── README.md               # the walkthrough (with code)
+    │   │   └── TIPS.md                  # no-code approach + Q&A log
     │   ├── 0036-valid-sudoku/
     │   ├── 0049-group-anagrams/
     │   ├── 0128-longest-consecutive-sequence/
@@ -43,7 +44,7 @@ Topic folders use a sequential `NN-` prefix to follow the recommended NeetCode o
 2. Pick the next unsolved problem from a topic.
 3. Click the LeetCode link to solve it.
 4. Click the `notes` link to read the walkthrough.
-5. Tick the checkbox when solved, then run `node sync.js` to refresh the counts.
+5. Tick the checkbox when solved. (The `(x / y)` topic counts are plain text — update them by hand, or ask Claude to recompute.)
 
 ## What each walkthrough contains
 
